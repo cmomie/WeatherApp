@@ -1,0 +1,138 @@
+* {
+    margin:0; 
+    padding:0;
+    box-sizing: boder-box;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(47,150, 163), rgb(48, 62, 143));
+    font-family: sans-serif;
+    color: white;
+}
+
+.location {
+    height: 10vh;
+    width: 50%;
+    display: flex; 
+    justify-content: space-around;
+    text-align: center;
+    align-items: center
+}
+
+
+.temperature {
+    margin-bottom: 5vh ;
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center
+}
+
+
+.temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span {
+margin: 10px;
+font-size: 30px;
+}
+
+.degree-section h2 {
+    font-size: 40px
+}
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 400px;
+        padding: 20px;
+      }
+      
+      input {
+        width: 100%;
+        margin-top: 0;
+        padding: 0.5em;
+        border: 0;
+        border-bottom: 2px solid gray;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+      }
+      
+      input:focus {
+        border-bottom: 4px solid black;
+      }
+      
+      input[type="reset"] {
+        width: auto;
+        height: auto;
+        border-bottom: 0;
+        background-color: transparent;
+        color: #686868;
+        font-size: 14px;
+      }
+      
+      .title {
+        width: 100%;
+        margin-block-end: 0;
+        font-weight: 500;
+      }
+      
+      .note {
+        width: 100%;
+        margin-block-start: 0;
+        font-size: 12px;
+      }
+      
+      .form-label {
+        width: 100%;
+        padding: 0.5em;
+      }
+      
+      .full-field {
+        flex: 400px;
+        margin: 15px 0;
+      }
+      
+      .slim-field-left {
+        flex: 1 150px;
+        margin: 15px 15px 15px 0px;
+      }
+      
+      .slim-field-right {
+        flex: 1 150px;
+        margin: 15px 0px 15px 15px;
+      }
+      
+      .my-button {
+        background-color: #000;
+        border-radius: 6px;
+        color: #fff;
+        margin: 10px;
+        padding: 6px 24px;
+        text-decoration: none;
+      }
+      
+      .my-button:hover {
+        background-color: #666;
+      }
+      
+      .my-button:active {
+        position: relative;
+        top: 1px;
+      }

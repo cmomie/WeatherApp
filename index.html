@@ -1,0 +1,54 @@
+<html>   
+    <head>
+        <meta charset ="UTF-8" />
+        <meta name ="viewport" content="width=device-width", initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./address.js"></script>
+
+        <title>Weather</title> 
+    </head>
+    <body>
+
+
+        <div class ="location">
+            <div class = "location-ciy">
+                <h1 class="location-timezone">What is the Weather like where you live?</h1>
+            </div>
+        </div>
+        <div class = "temperature">
+          <canvas class="icons" width="140" height="140"></canvas>
+
+            <div class = "degree-section">
+        
+                <h2 class = "temperature-degree"></h2>
+            </div>
+            <div class = "temperature-description"></div>
+        </div>
+
+        <form id="autocomplete" action="" method="get" autocomplete="on">
+            <label class="full-field">
+              <!-- Avoid the word "address" in id, name, or label text to avoid browser autofill from conflicting with Place Autocomplete. Star or comment bug https://crbug.com/587466 to request Chromium to honor autocomplete="off" attribute. -->
+              <span class="form-label"></span>
+              <input
+                id="ship-address"
+                name="ship-address"
+                required
+                autocomplete="off"
+              />
+            </label>
+    
+            <!-- Reset button provided for development testing convenience.
+        Not recommended for user-facing forms due to risk of mis-click when aiming for Submit button. -->
+          </form>
+
+
+        
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFxLIS6kr5YjZyFy7ErsSx1lswRieBXrk&callback=initAutocomplete&libraries=places&v=weekly"
+        async
+      ></script>
+        <script src= "app.js"></script>
+        <script src="skycons.js"></script>
+        </body>
+</html>
